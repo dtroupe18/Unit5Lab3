@@ -6,8 +6,8 @@ class RecursiveFibonacci {
     public static void main(String[] args) {
         int x = 0;
 
-        while (x < 15) {
-            System.out.print(fibonacci(x) + " ");
+        while (x < 50) {
+            System.out.println(x +": " + fibonacci(x) + " ");
             x++;
         }
 
@@ -19,11 +19,11 @@ class RecursiveFibonacci {
         if (n == 0)
             return 0;
 
-        else if (n== 1)
+        else if (n == 1)
             return 1;
 
         else
             //recursive call
-            return fibonacci(n-1) + fibonacci(n - 2);
+            return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
